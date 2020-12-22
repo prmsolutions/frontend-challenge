@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+
+  frontend:
+    image: frontend:dev
+    networks:
+      default:
+        aliases:
+        - frontend.local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "3000:3000"
+    volumes:
+      - ./assets:/app/assets
+      - ./components:/app/components
+      - ./layouts:/app/layouts
+      - ./pages:/app/pages
+      - ./static:/app/static
+      - ./store:/app/store
+      - ./package.json:/app/package.json
+      - ./yarn.lock:/app/yarn.lock
