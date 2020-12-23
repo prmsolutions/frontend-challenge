@@ -10,6 +10,6 @@ For our purposes and yours, we've Dockerized the application. Getting the applic
 docker-compose up
 ```
 
-and navigating to `localhost:3000`.
+and navigating to `localhost:8080`.
 
-Feel free to add more components or modify the Dockerfile or docker-compose.yml as part of your solution. Note, however, that if we can't run your code by running `docker-compose up` and navigating to `localhost:3000`, we will assume it doesn't work.
+Feel free to add more components or modify the Dockerfile or docker-compose.yml as part of your solution. Note, however, that if we can't run your code by running `docker-compose up` and navigating to `localhost:8080`, we will assume it doesn't work.
