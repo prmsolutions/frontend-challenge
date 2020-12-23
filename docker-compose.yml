@@ -1,23 +1,15 @@
 version: "3.7"
 services:
-
   frontend:
-    image: frontend:dev
+    image: frontend-challenge:dev
     networks:
       default:
         aliases:
-        - frontend.local
+        - frontend-challenge.local
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-     - "3000:3000"
+     - "8080:8080"
     volumes:
-      - ./assets:/app/assets
-      - ./components:/app/components
-      - ./layouts:/app/layouts
-      - ./pages:/app/pages
-      - ./static:/app/static
-      - ./store:/app/store
-      - ./package.json:/app/package.json
-      - ./yarn.lock:/app/yarn.lock
+      - ./src:/app/src
