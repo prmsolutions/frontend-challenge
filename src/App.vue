@@ -19,7 +19,7 @@ export default {
     }
   },
   mounted () {
-    fetch('https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/public-images-proton/parks2.json')
+    fetch('https://storage.googleapis.com/public-images-proton/parks2.json')
       .then(res => res.json())
       .then(data => this.parks = data)
   }
