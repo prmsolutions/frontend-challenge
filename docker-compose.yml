@@ -5,11 +5,11 @@ services:
     networks:
       default:
         aliases:
-        - frontend-challenge.local
+          - frontend-challenge.local
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-     - "8080:8080"
+      - "8080:8080"
     volumes:
       - ./src:/app/src
