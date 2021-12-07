@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style scoped>
 .park-card {
   border: 1px solid black;
 }

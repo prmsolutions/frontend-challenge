@@ -1,15 +1,24 @@
-# Proton Frontend Challenge v1
+# frontend-challenge-2.0
 
-Congratulations, you've passed our technical interview! Now it's time for a more in-depth chance to get a sense of the problems we solve and how we solve them.
-
-We've built a small application here, and we'd like you to make it better. You'll receive those instructions separately.
-
-For our purposes and yours, we've Dockerized the application. Getting the application up and running should be as easy as setting your working directory to this folder, and then running
-
+## Project setup
 ```
-docker-compose up
+yarn install
 ```
 
-and navigating to `localhost:8080`.
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-Feel free to add more components or modify the Dockerfile or docker-compose.yml as part of your solution. Note, however, that if we can't run your code by running `docker-compose up` and navigating to `localhost:8080`, we will assume it doesn't work.
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
